@@ -3,9 +3,8 @@ def get_first_name_of_season_winner(data, season)
     if person_hash["status"] == "Winner"
          name_array = season_hash["name"].split(" ")
          return name_array[0]
-       end
      end
-   end
+  end
 end
 
 def get_contestant_name(data, occupation)
