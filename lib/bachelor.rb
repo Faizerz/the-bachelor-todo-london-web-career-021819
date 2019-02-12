@@ -33,7 +33,7 @@ def get_occupation(data, hometown)
   data.each do |season, season_hash|
     season_hash.each do |person_hash|
       if person_hash["hometown"] == hometown
-        return person_hash["oc"]
+        return person_hash["occupation"]
       end
     end
   end
