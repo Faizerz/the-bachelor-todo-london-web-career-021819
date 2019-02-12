@@ -45,5 +45,5 @@ def get_average_age_for_season(data, season)
     total += person_hash["age"].to_f
     count += 1
   end
-  return total/count
+  return total/count.round
 end
