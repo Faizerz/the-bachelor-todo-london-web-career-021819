@@ -42,7 +42,7 @@ end
 def get_average_age_for_season(data, season)
   count = total = 0
   data[season].each do |person_hash|
-    total += person_hash["age"]
+    total += person_hash["age"].to_i 
     count += 1
   end
   return total/count
